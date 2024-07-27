@@ -31,7 +31,6 @@ main{
     width: 250px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;    
     height: 520px;
@@ -40,6 +39,7 @@ main{
     transition: width 0.3s;
     transition-timing-function: ease;
     padding: 10px;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem{
@@ -65,12 +65,12 @@ section#login > div#imagem{
 .icones{
     display: block;
     background-color: var(--cor02);
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
-    padding-top: 5px;
     color: white;
     margin: 5px 0px;
     height: 40px;
+    border: 2px solid var(--cor02);
 }
 
 #iconta, #isenha{
@@ -117,3 +117,30 @@ form > p > a#botao:hover{
 
 }  
 
+div.icones > label{
+   display: none;
+}
+
+div.icones > .material-symbols-outlined{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.icones input{
+    background-color: #71d0cbe4;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    border-radius: 8px;
+    transform: translateY(-14px);
+}
+
+div.icones > input:focus-within{
+    background-color: white;
+    border: none;
+}
+
+.material-symbols-outlined{
+    font-size: 3em;
+}
